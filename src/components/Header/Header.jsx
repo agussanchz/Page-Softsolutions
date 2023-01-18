@@ -3,7 +3,7 @@ import headerLogo from '../../images/dev.png'
 import headerResponsive from '../../images/headerResponsive.png'
 export default function Header({ desactive }) {
   //Constantes para controlar clases
-  const className_title = ' text-2xl text-gray-400 animate__animated animate__fadeInDown md:text-4xl md:text-indigo-50 '
+  const className_title = 'text-2xl text-indigo-50  animate__animated animate__fadeInDown md:text-4xl'
   const close = !desactive ? 'hidden' : '';
 
   //Renderizado
