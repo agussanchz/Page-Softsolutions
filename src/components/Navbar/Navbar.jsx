@@ -15,15 +15,13 @@ export default function Navbar({ openMenu }) {
         <>
             <nav className='h-24 pt-10 flex justify-around items-center animate__animated animate__fadeInDown animate__delay-2s'>
                 <div className='md:flex md:font-bold'>
-                    <h2 className='text-indigo-50 text-bold text-3xl special-underline '>
+                    <h2 className='text-bold text-3xl text-indigo-50 md:special-underline '>
                         <a href="/">SoftSolutions</a>
                     </h2>
                 </div>
 
-                <div className='md:hidden'>
-                    <button onClick={openMenu}>
-                        <img src={iconNavbar} alt="icono del navbar" className='h-5 w-auto ' />
-                    </button>
+                <div className='md:hidden border border-gray-400 w-11 h-11 rounded-full flex justify-center items-center' onClick={openMenu}>
+                    <img src={iconNavbar} alt="icono del navbar" className='h-5 w-auto ' />
                 </div>
 
                 <div className='hidden md:flex'>
