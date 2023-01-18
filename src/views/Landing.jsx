@@ -42,7 +42,7 @@ export default function Landing() {
         <Route exact path="/nosotros" element={ <About desactive={NavActive}/> }/>
         <Route exact path="/contacto" element={ <Contact desactive={NavActive}/> }/>
       </Routes>
-      <Footer desactive={NavActive} />
+      <Footer />
     </BrowserRouter>
     
      
