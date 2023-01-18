@@ -15,8 +15,8 @@ export default function Navbar({ openMenu }) {
         <>
             <nav className='h-24 pt-10 flex justify-around items-center animate__animated animate__fadeInDown animate__delay-2s'>
                 <div className='md:flex md:font-bold'>
-                    <h2 className='text-bold text-3xl text-indigo-50 md:special-underline '>
-                        <a href="/">SoftSolutions</a>
+                    <h2 className='text-bold text-3xl text-indigo-50 md:text-2xl '>
+                        <a href="/" className='special-underline'>SoftSolutions</a>
                     </h2>
                 </div>
 
