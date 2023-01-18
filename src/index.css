@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    @apply bg-primary-0;
+}
+
 .special-underline {
     @apply 
     capitalize

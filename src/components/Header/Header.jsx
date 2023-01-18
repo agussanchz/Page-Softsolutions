@@ -3,14 +3,14 @@ import headerLogo from '../../images/dev.png'
 import headerResponsive from '../../images/headerResponsive.png'
 export default function Header({ desactive }) {
   //Constantes para controlar clases
-  const className_title = 'leading-tight text-4xl text-indigo-50 animate__animated animate__fadeInDown'
+  const className_title = 'text-4xl text-indigo-50 animate__animated animate__fadeInDown'
   const close = !desactive ? 'hidden' : '';
 
   //Renderizado
   return (
     <>
-      <header className={'pt-12 pb-20 flex justify-center items-center md:bg-trasparent md:h-auto md:my-20 md:p-0 ' + close}>
-        <div className='h-full md:flex md:justify-center md:items-center md:gap-40'>
+      <header className={'h-auto py-14 flex justify-center items-center md:h-full ' + close}>
+        <div className='md:flex md:justify-center md:items-center md:gap-40'>
           <div className='flex justify-center text-center flex-col md:text-start'>
             <h2 className={className_title}>Estamos para </h2>
             <h2 className={className_title}><span className='uppercase font-bold'>solucionar</span> </h2>
@@ -20,8 +20,8 @@ export default function Header({ desactive }) {
           <div className='hidden md:flex'>
             <img src={headerLogo} alt="imagen-header" className='h-96 animate__animated animate__fadeInDown animate__delay-2s' />
           </div>
-          <div className='flex justify-center md:hidden'>
-            <img src={headerResponsive} alt="imagen-header" className='h-96 animate__animated animate__fadeInDown animate__delay-2s' />
+          <div className='h-auto pt-14 flex justify-center md:hidden'>
+            <img src={headerResponsive} alt="imagen-header" className='h-80 animate__animated animate__fadeInDown animate__delay-2s' />
           </div>
         </div>
       </header>

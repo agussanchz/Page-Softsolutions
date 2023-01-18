@@ -7,7 +7,7 @@ export default function Footer({ desactive }) {
     //Renderizado
     return (
         <>
-            <footer className={'animate__animated animate__fadeInDown animate__delay-2s ' + close}>
+            <footer className={'py-14 animate__animated animate__fadeInDown animate__delay-2s ' + close}>
                 <img src={imgFooter} alt="imagen-header" className='w-36 m-auto' />
             </footer>
         </>
