@@ -9,11 +9,11 @@ export default function Header({ desactive }) {
   //Renderizado
   return (
     <>
-      <header className={'h-96 flex justify-center items-center my-20 md:h-auto ' + close}>
-        <div className='flex justify-center items-center gap-40'>
-          <div className='font-bold'>
-            <h2 className={className_title}>Estamos</h2>
-            <h2 className={className_title}>para <span className='uppercase'>solucionar</span> </h2>
+      <header className={'p-20 flex justify-center items-center md:h-auto md:my-20 md:p-0 ' + close}>
+        <div className='md:flex md:justify-center md:items-center md:gap-40'>
+          <div className='flex justify-center flex-col'>
+            <h2 className={className_title}>Estamos para </h2>
+            <h2 className={className_title}><span className='uppercase font-bold'>solucionar</span> </h2>
             <h2 className={className_title}>tus problemas.</h2>
             <p className='animate__animated animate__fadeInDown animate__delay-1s text-gray-400'>Facilitamos y mejoramos tu calidad de vida.</p>
           </div>

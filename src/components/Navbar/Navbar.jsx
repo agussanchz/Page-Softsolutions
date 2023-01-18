@@ -14,7 +14,7 @@ export default function Navbar({ openMenu }) {
     //Renderizacion
     return (
         <>
-            <nav className='flex justify-around items-center h-24 animate__animated animate__fadeInDown animate__delay-2s'>
+            <nav className='flex justify-around items-center h-24 animate__animated animate__fadeInDown animate__delay-2s pt-16'>
                 <div className='font-bold'>
                     <h2 className='text-indigo-50 text-bold text-2xl special-underline'>
                        <a href="/">SoftSolutions</a>
