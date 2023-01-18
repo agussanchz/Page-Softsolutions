@@ -12,17 +12,17 @@ export default function Header({ desactive }) {
       <header className={'h-auto py-5 flex justify-center items-center md:h-full ' + close}>
         <div className='md:flex md:justify-center md:items-center md:gap-40'>
           <div className='h-auto pt-14 flex justify-center md:hidden'>
-            <img src={headerResponsive} alt="imagen-header" className='h-80 animate__animated animate__fadeInDown animate__delay-2s' />
+            <img src={headerResponsive} alt="imagen-header" className='h-80 animate__animated animate__fadeInDown' />
           </div>
 
           <div className='flex justify-center flex-col p-5 gap-4 md:text-start'>
-            <div className='animate__animated animate__fadeInDown'>
+            <div className='animate__animated animate__fadeInDown animate__delay-1s'>
               <h2 className={className_title}>Estamos para</h2>
               <span className='text-4xl font-bold uppercase text-indigo-50'>solucionar</span>
               <h2 className={className_title}>tus problemas.</h2>
             </div>
             <div>
-              <p className='animate__animated animate__fadeInDown animate__delay-1s text-indigo-50 md:text-gray-400'>Facilitamos y mejoramos tu calidad de vida.</p>
+              <p className='animate__animated animate__fadeInDown animate__delay-2s text-indigo-50 md:text-gray-400'>Facilitamos y mejoramos tu calidad de vida.</p>
             </div>
           </div>    
          
