@@ -15,9 +15,9 @@ export default function NavResponsive({ closeMenu }) {
         <div className='h-auto overflow-hidden touch-none'>
             <div className='border-solid border-transparent border-4 animate__animated animate__fadeInDown'>  
                 {optionNav.map(([option, url]) => (
-                    <Link to={url} >
+                    <Link to={url} key={option}>
                         <div className='h-16 text-indigo-50 border p-4 border-gray-400' onClick={closeMenu}>                            
-                            <p>{option}  </p>
+                            <p>{option}</p>
                         </div>  
                     </Link>        
                 ))}  

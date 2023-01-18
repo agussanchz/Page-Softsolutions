@@ -8,7 +8,6 @@ export default function Navbar({ openMenu }) {
         ['Servicios', '/servicios'],
         ['Productos', '/productos'],
         ['Nosotros', '/nosotros'],
-        ['Contacto', '/contacto']
     ]
 
     //Renderizacion
@@ -16,9 +15,15 @@ export default function Navbar({ openMenu }) {
         <>
             <nav className='h-24 pt-10 flex justify-around items-center animate__animated animate__fadeInDown animate__delay-2s'>
                 <div className='md:flex md:font-bold'>
-                    <h2 className='text-indigo-50 text-bold text-2xl special-underline '>
-                       <a href="/">SoftSolutions</a>
+                    <h2 className='text-indigo-50 text-bold text-3xl special-underline '>
+                        <a href="/">SoftSolutions</a>
                     </h2>
+                </div>
+
+                <div className='md:hidden'>
+                    <button onClick={openMenu}>
+                        <img src={iconNavbar} alt="icono del navbar" className='h-5 w-auto ' />
+                    </button>
                 </div>
 
                 <div className='hidden md:flex'>
@@ -31,10 +36,8 @@ export default function Navbar({ openMenu }) {
                     </ul>
                 </div>
 
-                <div className='md:hidden'>
-                    <button onClick={openMenu}>
-                        <img src={iconNavbar} alt="icono del navbar" className='h-6 w-auto ' />
-                    </button>
+                <div className='hidden md:flex'>
+                    <Link to={'/contacto'} className='special-underline text-gray-400'>Contacto</Link>
                 </div>
             </nav>
         </>
