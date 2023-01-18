@@ -25,7 +25,7 @@ export default function Navbar({ openMenu }) {
                     <ul className='flex gap-4 text-gray-400'>
                         {optionNav.map(([option, url]) => (
                             <li key={url}>
-                                <a href={url} className='special-underline'>{option}</a>
+                                <Link to={url} className='special-underline'>{option}</Link>
                             </li>
                         ))}
                     </ul>
