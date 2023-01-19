@@ -21,11 +21,11 @@ export default function NavResponsive({ closeMenu }) {
                         </div>  
                     </Link>        
                 ))}  
-
-                <div className='h-16 text-indigo-50 p-4 border-b border-t border-gray-500' onClick={closeMenu}>
-                    <Link to={'/contacto'}> Contacto</Link>
-                </div>
-
+                <Link to={'/contacto'}> 
+                    <div className='h-16 text-indigo-50 p-4 border-b border-t border-gray-500' onClick={closeMenu}>
+                        <p>Contacto</p>
+                    </div>
+                </Link>
             </div>
         </div>
     </>
