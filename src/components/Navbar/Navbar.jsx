@@ -5,12 +5,15 @@ export default function Navbar({ openMenu }) {
 
     //Opciones del menu
     const optionNav = [
+        ['Inicio', '/'],
         ['Servicios', '/servicios'],
-        ['Productos', '/productos'],
+        ['Demos', '/demos'],
         ['Nosotros', '/nosotros'],
     ]
 
-    const classNav = window.innerWidth > 768 ? 'animate__animated animate__fadeInDown animate__delay-2s' : ''
+    //Constante para manejar clases del nav
+    const classNav =  window.innerWidth > 768 ? 'animate__animated animate__fadeInDown animate__delay-2s' : ''
+
     //Renderizacion
     return (
         <>
@@ -35,9 +38,10 @@ export default function Navbar({ openMenu }) {
                     </ul>
                 </div>
 
-                <div className='hidden md:flex'>
-                    <Link to={'/contacto'} className='special-underline text-gray-400'>Contacto</Link>
+                <div className='hidden md:flex md:text-gray-400'>
+                    <Link to={'/contacto'} className='special-underline'> Contacto</Link>
                 </div>
+
             </nav>
         </>
     )

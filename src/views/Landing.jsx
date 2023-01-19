@@ -1,5 +1,5 @@
 //Importacion de mis componentes
-import { About, Contact, Footer, Header, Navbar, NavResponsive, Products, Services} from "../components"
+import { About, Contact, Demos, Footer, Header, Navbar, NavResponsive, Products, Services} from "../components"
 //Importacion de los hook
 import React, { useState, useEffect} from 'react'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
@@ -39,6 +39,7 @@ export default function Landing() {
         <Route exact path="/" element={<Header desactive={NavActive}/>} />
         <Route exact path="/servicios" element={ <Services desactive={NavActive}/> }/>
         <Route exact path="/productos" element={ <Products desactive={NavActive}/> }/>
+        <Route exact path="/demos" element={ <Demos desactive={NavActive}/> }/>
         <Route exact path="/nosotros" element={ <About desactive={NavActive}/> }/>
         <Route exact path="/contacto" element={ <Contact desactive={NavActive}/> }/>
       </Routes>

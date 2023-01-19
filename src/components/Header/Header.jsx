@@ -12,12 +12,9 @@ export default function Header({ desactive }) {
     <>
       <header className={'h-auto py-5 flex justify-center items-center md:h-full md:my-20 ' + close}>
         <div className='md:flex md:justify-center md:items-center md:gap-40'>
-
           <div className='h-auto pt-14 flex justify-center animate__animated animate__fadeInLeft md:hidden'>
-            <h1><></></h1>
             <img src={headerResponsive} alt="imagen-header" className='h-64' />
           </div>  
-
           <div className='h-auto flex justify-center flex-col p-10 gap-4 md:text-start'>
             <div className={'text-4xl text-gray-400 ' + classTitle}>
               <h2>Estamos para</h2>
@@ -27,8 +24,7 @@ export default function Header({ desactive }) {
             <div className={classParrafo}>
               <p className=' text-indigo-50 md:text-gray-400'>Facilitamos y mejoramos tu calidad de vida.</p>
             </div>
-          </div>  
-         
+          </div>      
           <div className='hidden md:flex'>
             <img src={headerLogo} alt="imagen-header" className='h-96 animate__animated animate__fadeInDown animate__delay-2s' />
           </div>

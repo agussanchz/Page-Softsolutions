@@ -11,7 +11,8 @@ module.exports = {
       },
       colors: {
         'primary': ['#1f2028;'],
-        'secondary': ['#191920c4'] 
+        'secondary': ['#191920c4'],
+        'card': ['#2e3039']
       }
     },
   },
