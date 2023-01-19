@@ -12,7 +12,7 @@ export default function Demos({ desactive }) {
   return (
     <section className={'md:my-20 md:flex md:justify-center md:gap-40 ' + close}>
       <div className='my-20 p-4 flex flex-col gap-6'>
-        <h2 className={'text-indigo-50 text-4xl md:flex md:justify-center md:text-3xl ' + animate__title}>¿Te gustaria probar algunos de nuestro servicios?</h2>
+        <h2 className={'text-indigo-50 text-4xl md:flex md:justify-center md:text-3xl ' + animate__title}>¿Te gustaria probar algunos de nuestros servicios?</h2>
         <p className={'text-gray-400 md:flex md:justify-center ' + animate__parrafo}>¡Aqui te dejamos los <span className='mx-1 text-indigo-50 font-bold'>demos</span>para que puedas utilizarlos!</p>
       
         <span className='pt-32 animate__animated animate__bounce animate__delay-2s md:flex md:justify-center	'>
