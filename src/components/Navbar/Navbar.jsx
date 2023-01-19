@@ -10,10 +10,11 @@ export default function Navbar({ openMenu }) {
         ['Nosotros', '/nosotros'],
     ]
 
+    const classNav = window.innerWidth > 768 ? 'animate__animated animate__fadeInDown animate__delay-2s' : ''
     //Renderizacion
     return (
         <>
-            <nav className='h-24 pt-10 flex justify-around items-center animate__animated animate__fadeInDown animate__delay-2s'>
+            <nav className={'h-24 pt-10 flex justify-around items-center ' + classNav}>
                 <div className='md:flex md:font-bold'>
                     <h2 className='text-bold text-3xl text-indigo-50 md:text-2xl '>
                         <a href="/" className='special-underline'>SoftSolutions</a>
