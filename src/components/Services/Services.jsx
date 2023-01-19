@@ -18,7 +18,7 @@ export default function Services({ desactive }) {
 
   //Renderizado
   return (
-    <section className={'flex justify-center items-center my-10 ' + close}>
+    <section className={'my-20 flex justify-center items-center ' + close}>
       <div className='flex flex-col justify-center gap-4 font-poppins md:flex-row'>
         {titleCard.map((titulo, indice) => (
           <Card
