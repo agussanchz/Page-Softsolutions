@@ -5,14 +5,15 @@ export default function Demos({ desactive }) {
   //Constante para controlar clases y que no se muestre el componente en el menu responsive
   const close = !desactive ? 'hidden' : ' ';
 
-  const animate__direction = window.innerWidth > 768 ? `animate__animated animate__fadeInDown` : `animate__animated animate__fadeInLeft`;
+  const animate__title = window.innerWidth > 768 ? `animate__animated animate__fadeInDown` : `animate__animated animate__fadeInLeft`;
+  const animate__parrafo= window.innerWidth > 768 ? `animate__animated animate__fadeInDown animate__delay-1s` : `animate__animated animate__fadeInLeft animate__delay-1s`;
 
 
   return (
     <section className={'md:my-20 md:flex md:justify-center md:gap-40 ' + close}>
       <div className='my-20 p-4 flex flex-col gap-6'>
-        <h2 className={'text-indigo-50 text-4xl md:flex md:justify-center md:text-3xl ' + animate__direction}>¿Te gustaria probar algunos de nuestro servicios?</h2>
-        <p className='text-gray-400 md:flex md:justify-center animate__animated animate__fadeInLeft animate__delay-1s'>¡Aqui te dejamos los <span className='mx-1 text-indigo-50 font-bold'>demos</span>para que puedas utilizarlos!</p>
+        <h2 className={'text-indigo-50 text-4xl md:flex md:justify-center md:text-3xl ' + animate__title}>¿Te gustaria probar algunos de nuestro servicios?</h2>
+        <p className={'text-gray-400 md:flex md:justify-center ' + animate__parrafo}>¡Aqui te dejamos los <span className='mx-1 text-indigo-50 font-bold'>demos</span>para que puedas utilizarlos!</p>
       
         <span className='pt-32 animate__animated animate__bounce animate__delay-2s md:flex md:justify-center	'>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-10 h-10 md:hidden">
