@@ -1,6 +1,7 @@
 import React from 'react'
-import headerLogo from '../../images/dev.png'
+import headerLogo from '../../images/header.png'
 import headerResponsive from '../../images/headerResponsive.png'
+
 export default function Header({ desactive }) {
   //Constantes para controlar clases
   const close = !desactive ? 'hidden' : '';
@@ -13,7 +14,7 @@ export default function Header({ desactive }) {
       <header className={'h-auto py-5 flex justify-center items-center md:h-full md:my-20 ' + close}>
         <div className='md:flex md:justify-center md:items-center md:gap-40'>
           <div className='h-auto pt-14 flex justify-center animate__animated animate__fadeInLeft md:hidden'>
-            <img src={headerResponsive} alt="imagen-header" className='h-64' />
+            <img src={headerResponsive} alt="imagen-header" className='h-80' />
           </div>  
           <div className='h-auto flex justify-center flex-col p-10 gap-4 md:text-start'>
             <div className={'text-4xl text-gray-400 ' + classTitle}>
@@ -26,7 +27,7 @@ export default function Header({ desactive }) {
             </div>
           </div>      
           <div className='hidden md:flex'>
-            <img src={headerLogo} alt="imagen-header" className='h-96 animate__animated animate__fadeInDown animate__delay-2s' />
+            <img src={headerLogo} alt="imagen-header" className='h-96 w-auto animate__animated animate__fadeInDown animate__delay-2s' />
           </div>
         </div>
       </header>

@@ -1,5 +1,5 @@
 import React from 'react'
-import imgAbout from '../../images/2.png'
+import imgAbout from '../../images/about.png'
 export default function About({ desactive }) {
   //Constante para controlar clases y que no se muestre el componente en el menu responsive
   const close = !desactive ? 'hidden' : ' ';
