@@ -9,8 +9,8 @@ export default function About({ desactive }) {
 
   //Renderizado
   return (
-    <section className={'my-20 ' + close}>
-        <div className='my-20 p-6 md:flex md:justify-center md:gap-40 md:items-center md:p-0'>
+    <section className={'my-24 ' + close}>
+        <div className='my-20 p-6 md:flex md:justify-center md:gap-40 md:items-center'>
           <div className='flex justify-center md:hidden animate__animated animate__fadeInLeft '>
               <img src={imgAbout} alt="imagen-header" className='h-80' />
           </div>
