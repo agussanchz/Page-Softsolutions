@@ -1,5 +1,7 @@
 import React from 'react'
 import imgAbout from '../../images/about.png'
+import imgAboutResponsive from '../../images/header.png'
+
 export default function About({ desactive }) {
   //Constante para controlar clases y que no se muestre el componente en el menu responsive
   const close = !desactive ? 'hidden' : ' ';
@@ -12,7 +14,7 @@ export default function About({ desactive }) {
     <section className={'md:my24 ' + close}>
         <div className='my-10 md:my-20 p-6 md:flex md:justify-center md:gap-40 md:items-center'>
           <div className='flex justify-center md:hidden animate__animated animate__fadeInLeft '>
-              <img src={imgAbout} alt="imagen-header" className='h-96' />
+              <img src={imgAboutResponsive} alt="imagen-header" className='h-80' />
           </div>
 
           <div className='flex flex-col justify-center items-center p-6  md:w-96 md:p-0 '>
